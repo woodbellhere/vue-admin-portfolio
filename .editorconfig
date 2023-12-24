@@ -1,0 +1,19 @@
+root =  = true
+
+[*]
+# 字符集
+charset = utf-8
+# 锁进用tab还是space
+indent_style = space
+# 锁进大小
+indent_size = 2
+# 换行用lf，cr回车还是crlf回车换行
+end_of_line = lf
+# 去除行首空白
+trim_trailing_whitespace = true
+# 在文件末位插入新行
+insert_final_newline = true
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
