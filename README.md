@@ -1,24 +1,26 @@
 # vue-portfolio2
 
-## Project setup
-```
-npm install
-```
+## 内容简介
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+本项目是一个常用后台管理系统的实现，受到 vue-element-admin 和@王红元 admin 项目的启发。
+项目的主要目的是了解常见后台业务的形式以及实践一下其中写法
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 主要随大流实现了登录页，目录页，搜索/列表页。
+- 其他具体业务页面目前仅有简单填充，后期考虑用 config 配置填充更多内容
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 功能实现
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 随大流实现了封装 axios 实现请求自动加 token，也配合 localStorage 的封装实现 json 的自动序列化和反序列
+- 实现了基于登录角色身份动态注册菜单的路由控制功能/RBAC
+- 尝试封装了 element 的 table 和 form 组件来动态支持不同配置的页面内容，如搜索/列表页可较为简单地支持不同具体页面中的不同搜索栏和列表展示中的不同栏目
+- API 使用了社区提供的接口，但目前非常不稳定
+
+## 技术组合
+
+vue3 + vue-router + vuex + element-plus + axios
+
+## 未来改动
+
+- api 最好自己写了，不然整个项目过于受制于人
+- 有空把目前还只是简单填充的几个页面补充一下
+- 向 vue-element-admin 正式看齐，把改有的功能都自己写一写
